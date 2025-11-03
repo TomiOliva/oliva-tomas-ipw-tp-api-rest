@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - Buscador de Personajes - Oliva, Tomás UAI - IPW </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="portal-bg"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="glitch" data-text="RICK AND MORTY">RICK AND MORTY</h1>
+            <p class="subtitle">Buscador Interdimensional de Personajes</p>
+        </div>
+        
+        <div class="controls">
+            <div class="all-characters-section">
+                <button id="getAllBtn" class="btn btn-primary">
+                    <span>🛸</span> OBTENER TODOS LOS PERSONAJES
+                </button>
+            </div>
+
+            <div class="filters-section">
+                <h3 class="section-title">
+                    <span class="portal-icon">🌀</span>
+                    FILTROS DIMENSIONALES
+                </h3>
+                <div class="filter-flex">
+                    <div class="filter-item">
+                        <label for="nameFilter">NOMBRE:</label>
+                        <input type="text" id="nameFilter" placeholder="Ej: Rick Sanchez">
+                    </div>
+                    <div class="filter-item">
+                        <label for="statusFilter">ESTADO:</label>
+                        <select id="statusFilter">
+                            <option value="">Todos</option>
+                            <option value="alive">Vivo</option>
+                            <option value="dead">Muerto</option>
+                            <option value="unknown">Desconocido</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="speciesFilter">ESPECIE:</label>
+                        <input type="text" id="speciesFilter" placeholder="Ej: Human, Alien">
+                    </div>
+                    <div class="filter-item">
+                        <label for="typeFilter">TIPO:</label>
+                        <input type="text" id="typeFilter" placeholder="Ej: Genetic experiment">
+                    </div>
+                    <div class="filter-item">
+                        <label for="genderFilter">GÉNERO:</label>
+                        <select id="genderFilter">
+                            <option value="">Todos</option>
+                            <option value="female">Femenino</option>
+                            <option value="male">Masculino</option>
+                            <option value="genderless">Sin género</option>
+                            <option value="unknown">Desconocido</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button id="filterBtn" class="btn btn-secondary">
+                        <span>🔬</span> BUSCAR EN EL MULTIVERSO
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="message"></div>
+        <div id="results"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
